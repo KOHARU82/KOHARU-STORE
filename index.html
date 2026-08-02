@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⚡ KOHARU STORE | Premium Laptops & Workstations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">⚡ KOHARU STORE</a>
+            <ul class="nav-links">
+                <li><a href="#gaming">Gaming</a></li>
+                <li><a href="#ultrabook">Ultrabooks</a></li>
+                <li><a href="#workstation">Workstations</a></li>
+                <li><a href="#info">About Us</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="btn-login" id="loginBtn">Login</button>
+                <button class="btn-cart" id="cartBtn">
+                    Cart (<span id="cartCount">0</span>)
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Next-Gen Power.<br>Unmatched Speed.</h1>
+                <p>Discover flagship gaming laptops, ultrabooks, and sleek professional workstations designed to push boundaries.</p>
+                <a href="#gaming" class="btn-primary">Explore Laptops</a>
+            </div>
+            <div class="hero-image">
+                <img src="laptop.jpg" alt="High-performance Laptop">
+            </div>
+        </section>
+        <section class="featured" id="gaming">
+            <h2 class="section-title">GAMING LAPTOPS</h2>
+            <div class="grid">
+
+                <div class="card">
+                    <img src="b.jpg" alt="Razer Blade 16" class="card-img" onerror="this.src='https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=600&q=80'">
+                    <span class="card-tag">Gaming Beast</span>
+                    <h3 class="card-title">Razer Blade 16</h3>
+                    <ul class="specs">
+                        <li>• Intel Core Ultra 9</li>
+                        <li>• RTX 5090</li>
+                        <li>• 64GB DDR5 RAM</li>
+                        <li>• 16" 240Hz OLED Display</li>
+                    </ul>
+                    <div class="card-footer">
+                        <span class="price">$2,500</span>
+                        <button class="btn-buy" onclick="addToCart('Razer Blade 16', 2500)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="l.jpg" alt="Lenovo Legion Pro 7i" class="card-img" onerror="this.src='https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&w=600&q=80'">
+                    <span class="card-tag">High Performance</span>
+                    <h3 class="card-title">Lenovo Legion Pro 7i</h3>
+                    <ul class="specs">
+                        <li>• Intel Core i9</li>
+                        <li>• RTX 5080</li>
+                        <li>• 1TB SSD Storage</li>
+                        <li>• 16" WQXGA 240Hz Display</li>
+                    </ul>
+                    <div class="card-footer">
+                        <span class="price">$3,199</span>
+                        <button class="btn-buy" onclick="addToCart('Lenovo Legion Pro 7i', 3199)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="rog.jpg" alt="ASUS ROG Zephyrus G16" class="card-img" onerror="this.src='https://images.unsplash.com/photo-1541807084-5c52b6b3adef?auto=format&fit=crop&w=600&q=80'">
+                    <span class="card-tag">Thin & Light</span>
+                    <h3 class="card-title">ASUS ROG Zephyrus G16</h3>
+                    <ul class="specs">
+                        <li>• Intel Core Ultra 9</li>
+                        <li>• RTX 5080</li>
+                        <li>• 16" ROG Nebula OLED 240Hz</li>
+                        <li>• 1.85 kg Lightweight Body</li>
+                    </ul>
+                    <div class="card-footer">
+                        <span class="price">$2,500</span>
+                        <button class="btn-buy" onclick="addToCart('ASUS ROG Zephyrus G16', 2500)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="msi.jpg" alt="MSI Vector 16 HX" class="card-img" onerror="this.src='https://images.unsplash.com/photo-1593642632823-8f785ba67e45?auto=format&fit=crop&w=600&q=80'">
+                    <span class="card-tag">Best Value</span>
+                    <h3 class="card-title">MSI Vector 16 HX</h3>
+                    <ul class="specs">
+                        <li>• Intel Core Ultra 9 275HX</li>
+                        <li>• RTX 5070</li>
+                        <li>• 16GB DDR5 / 1TB SSD</li>
+                        <li>• 16" QHD+ 240Hz Display</li>
+                    </ul>
+                    <div class="card-footer">
+                        <span class="price">$1,700</span>
+                        <button class="btn-buy" onclick="addToCart('MSI Vector 16 HX', 1700)">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="featured" id="ultrabook">
+            <h2 class="section-title">ULTRABOOKS</h2>
+            <div class="grid">
+
+                <div class="card">
+                    <img src="apple.jpg" alt="Apple MacBook Air" class="card-img" onerror="this.src='https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80'">
+                    <span class="card-tag">Best Overall Ultrabook</span>
+                    <h3 class="card-title">Apple MacBook Air</h3>
+                    <ul class="specs">
+                        <li>• Apple M4 Chip</li>
+                        <li>• 24GB Unified Memory</li>
+                        <li>• 13.6" Liquid Retina Display</li>
+                        <li>• 18 Hours Battery Life</li>
+                    </ul>
+                    <div class="card-footer">
+                        <span class="price">$1,500</span>
+                        <button class="btn-buy" onclick="addToCart('Apple MacBook Air', 1500)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="azb.jpg" alt="ASUS Zenbook 14 OLED" class="card-img" onerror="this.src='https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=600&q=80'">
+                    <span class="card-tag">Best Value & Display</span>
+                    <h3 class="card-title">ASUS Zenbook 14 OLED</h3>
+                    <ul class="specs">
+                        <li>• Intel Core Ultra 7</li>
+                        <li>• 14" 3K 120Hz OLED Display</li>
+                        <li>• 16GB–32GB RAM</li>
+                        <li>• Lightweight Ceraluminum (~1.2 kg)</li>
+                    </ul>
+                    <div class="card-footer">
+                        <span class="price">$3,199</span>
+                        <button class="btn-buy" onclick="addToCart('ASUS Zenbook 14 OLED', 3199)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="lenovo.jpg" alt="Lenovo Yoga Slim 7i" class="card-img" onerror="this.src='https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=600&q=80'">
+                    <span class="card-tag">Best 2-in-1 Versatility</span>
+                    <h3 class="card-title">Lenovo Yoga Slim 7i</h3>
+                    <ul class="specs">
+                        <li>• Intel Core Ultra 7 vPro</li>
+                        <li>• 14" 2.8K 120Hz OLED Touchscreen</li>
+                        <li>• 360-Degree Convertible Hinge</li>
+                        <li>• Included Precision Stylus</li>
+                    </ul>
+                    <div class="card-footer">
+                        <span class="price">$1,300</span>
+                        <button class="btn-buy" onclick="addToCart('Lenovo Yoga Slim 7i', 1300)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="dxps.jpg" alt="Dell XPS 13" class="card-img" onerror="this.src='https://images.unsplash.com/photo-1593642632823-8f785ba67e45?auto=format&fit=crop&w=600&q=80'">
+                    <span class="card-tag">Best Premium Windows</span>
+                    <h3 class="card-title">Dell XPS 13</h3>
+                    <ul class="specs">
+                        <li>• Intel Core Ultra 7</li>
+                        <li>• 3.2K OLED Touch Screen</li>
+                        <li>• Glass Haptic Touchpad</li>
+                        <li>• CNC Machined Aluminum Frame</li>
+                    </ul>
+                    <div class="card-footer">
+                        <span class="price">$1,700</span>
+                        <button class="btn-buy" onclick="addToCart('Dell XPS 13', 1700)">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="featured" id="workstation">
+            <h2 class="section-title">WORKSTATIONS</h2>
+            <div class="grid">
+
+                <div class="card">
+                    <img src="tp.jpg" alt="Lenovo ThinkPad P16 Gen 2" class="card-img" onerror="this.src='https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=600&q=80'">
+                    <span class="card-tag">Heavy-Duty Powerhouse</span>
+                    <h3 class="card-title">Lenovo ThinkPad P16 Gen 2</h3>
+                    <ul class="specs">
+                        <li>• Intel Core i9-13980HX</li>
+                        <li>• NVIDIA RTX 5000 Ada Generation</li>
+                        <li>• 192GB DDR5 RAM</li>
+                        <li>• Dual SSD slots (up to 8TB)</li>
+                    </ul>
+                    <div class="card-footer">
+                        <span class="price">$2,450</span>
+                        <button class="btn-buy" onclick="addToCart('Lenovo ThinkPad P16 Gen 2', 2450)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="amb.jpg" alt="Apple MacBook Pro 16-Inch" class="card-img" onerror="this.src='https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80'">
+                    <span class="card-tag">Creative Studio</span>
+                    <h3 class="card-title">Apple MacBook Pro 16-Inch</h3>
+                    <ul class="specs">
+                        <li>• Apple M3 Max</li>
+                        <li>• 40-core GPU</li>
+                        <li>• 128GB Unified Memory</li>
+                        <li>• 16.2" Liquid Retina XDR Display</li>
+                    </ul>
+                    <div class="card-footer">
+                        <span class="price">$4,000</span>
+                        <button class="btn-buy" onclick="addToCart('Apple MacBook Pro 16-Inch', 4000)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="dp.jpg" alt="Dell Precision 7680" class="card-img" onerror="this.src='https://images.unsplash.com/photo-1593642632823-8f785ba67e45?auto=format&fit=crop&w=600&q=80'">
+                    <span class="card-tag">Enterprise Customization</span>
+                    <h3 class="card-title">Dell Precision 7680</h3>
+                    <ul class="specs">
+                        <li>• Intel Core i9 vPro</li>
+                        <li>• NVIDIA RTX 5000 Ada</li>
+                        <li>• 128GB CAMM2 DDR5 RAM</li>
+                        <li>• 16" 4K OLED Touchscreen</li>
+                    </ul>
+                    <div class="card-footer">
+                        <span class="price">$2,500</span>
+                        <button class="btn-buy" onclick="addToCart('Dell Precision 7680', 2500)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="hp.jpg" alt="HP ZBook Fury 16 G11" class="card-img" onerror="this.src='https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&w=600&q=80'">
+                    <span class="card-tag">Expandable Thermal Master</span>
+                    <h3 class="card-title">HP ZBook Fury 16 G11</h3>
+                    <ul class="specs">
+                        <li>• Intel Core i9-14900HX</li>
+                        <li>• NVIDIA RTX 5000Ada</li>
+                        <li>• 128GB RAM</li>
+                        <li>• 16" DreamColor 120Hz Display</li>
+                    </ul>
+                    <div class="card-footer">
+                        <span class="price">$1,700</span>
+                        <button class="btn-buy" onclick="addToCart('HP ZBook Fury 16 G11', 1700)">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="info-section" id="info">
+            <h2 class="section-title">WHY KOHARU STORE?</h2>
+            <div class="info-grid">
+                <div class="info-box">
+                    <h3>Fast Express Shipping</h3>
+                    <p>Every rig and laptop is carefully packed and shipped with insured global express delivery.</p>
+                </div>
+                <div class="info-box">
+                    <h3>3-Year Full Warranty</h3>
+                    <p>Enjoy complete peace of mind with 3 full years of hardware warranty and lifetime tech support.</p>
+                </div>
+                <div class="info-box">
+                    <h3>Benchmarked Performance</h3>
+                    <p>All our products are rigorously stress-tested for maximum thermal and computational efficiency.</p>
+                </div>
+                <div class="info-box">
+                    <h3>For More Information Please Contact Us</h3>
+                    <p>Email: cristianoronaldothegoat34@gmail.com<br>Phone: <br>+855 712 850 420</p>
+                </div>
+            </div>
+        </section>
+        <div style="text-align: center; margin: 3rem 0;">
+            <a href="#" class="btn-primary">Back to Top</a>
+        </div>
+    </main>
+    <div class="auth-modal" id="loginModal">
+        <div class="auth-box">
+            <span class="close-auth" id="closeLogin">&times;</span>
+            <h2 id="modalTitle">Account Login</h2>
+            <form id="authForm" onsubmit="handleAuth(event)">
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter email..." required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter password..." required>
+                </div>
+                <button type="submit" class="btn-primary auth-submit-btn">Login</button>
+            </form>
+            <p class="auth-toggle-text">
+                Don't have an account? <a href="#" id="toggleAuth">Sign Up</a>
+            </p>
+        </div>
+    </div>
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h3>Shopping Cart</h3>
+                <span class="close-btn" id="closeCart">&times;</span>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <p class="empty-msg">Your cart is empty.</p>
+            </div>
+            <div class="cart-footer">
+                <div class="total-price">Total: $<span id="cartTotal">0</span></div>
+                <button class="btn-primary checkout-btn" onclick="checkout()">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Koharu Store. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
